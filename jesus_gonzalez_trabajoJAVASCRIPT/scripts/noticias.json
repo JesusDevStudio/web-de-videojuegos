@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "The Last of Us II más barato para la gente que ya tenía la version para PS4",
+        "enlace": "https://www.3djuegos.com/juegos/the-last-of-us-parte-2-remastered/noticias/playstation-tiene-gesto-buena-fe-fans-remaster-the-last-of-us-parte-2-evitando-que-paguen-precio-completo-tenian-version-ps4",
+        "descripcion": "Sony ofrece reembolsos a los que reservaron el remaster teniendo el juego original y avisa del descuento al que pueden optar",
+        "imagen": "./assets/images/TheLastOfUs.png"
+    },
+    
+    {
+        "titulo": "TOTY 2024",
+        "enlace": "https://www.hobbyconsolas.com/noticias/revelado-equipo-ano-toty-ea-sports-fc-24-masculino-femenino-1358307",
+        "descripcion": "Esta semana han salido los TOTY del año 2024",
+        "imagen": "./assets/images/Toty.png"
+    },
+    {
+        "titulo": "Juegos de PS Plus este mes de Febrero",
+        "enlace": "https://as.com/meristation/noticias/que-juegos-abandonan-ps-plus-extra-y-premium-en-febrero-de-2024-n/",
+        "descripcion": "Estos son los juegos que ha sacado play station plus para el mes de febrero",
+        "imagen": "./assets/images/Psplus.png"
+    }
+]
+

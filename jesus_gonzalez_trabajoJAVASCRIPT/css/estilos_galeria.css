@@ -1,0 +1,383 @@
+/* ---------------------------FUENTES EXTERNAS y RESET-------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* ---------------------------CUERPO Y MENU-------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #060606;
+}
+
+.navbar {
+    background: #060606;
+    position: fixed; 
+    top: 0;         
+    width: 100%;     
+    z-index: 1000;
+  }
+
+.platillo img {
+    width: 100%; /* La imagen ocupara todo el ancho del contenedor .platillo */
+    height: auto; /* Esto Mantendra el ratio de aspecto de la imagen */
+}
+
+.header {
+    display: flex;
+    position: relative;
+}
+
+.header-content{
+    position: relative;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.header-content h1{
+    font-size: 70px;
+    color: #dfdde0;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.header-content p{
+    font-size: 18px;
+    padding: 0 200px;
+    color: #8b7e7b;
+    margin-bottom: 80px;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    color: #d910eb;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    float: left;
+    position: relative;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #1de02a;
+    display: block;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.menu .navbar ul li a:hover {
+    color: #da17da;
+}
+.menu-icono{
+    width: 25px;
+}
+
+.menu .navbar .active {
+    color: #d900ff;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+/* --------------------------------------------------------------------- */
+
+/* ---------------------------SUBMENU-------------------------- */
+
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+#total-carrito {
+    margin-top: 20px;
+    text-align: center;
+}
+#total-carrito p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#total-precio {
+    font-size: 20px;
+    color: #34e434;
+    font-weight: 800;
+}
+.submenu:hover #carrito{
+    display:block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top:100%;
+    z-index: 1;
+    background-color: #403e4576;
+    padding: 20px;
+    min-width: 400px;
+    min-height: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    color:#dfdde0;
+}
+td{
+    color: #dfdde0;
+}
+.borrar{
+    background-color: #2be916;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #dfdde0;
+    font-weight: 800;
+}
+/* --------------------------------------------------------------------- */
+
+/* ---------------------------BOTONES------------------------- */
+.botons {
+    display: flex;
+    justify-content: center;
+}
+.btn-1 {
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    padding: 13px 0;
+    border-radius: 25px;
+    color: #dfdde0;
+    text-transform: uppercase;
+    background-color: #27da1e;
+}
+
+.btn-1:hover{
+    background-color: #2abe08;
+}
+
+.arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 25px;
+    color: #dfdde0;
+    margin-top: 25px;
+    border: 1px solid #dfdde0;
+}
+
+.btn-2:hover {
+    background-color: #23e82d;
+    border: 1px solid #23e82a;
+}
+
+.btn-3{
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 25px;
+    color: #dfdde0;
+    margin-top: 25px;
+    border: 1px solid #dfdde0;
+}
+.btn-3:hover {
+    background-color: #33e823;
+    border: 1px solid #23e826;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+
+/* ---------------------------LISTAS------------------------- */
+.recetas{
+    display: flex;
+    padding: 120px 0;
+}
+
+.recetas-1{
+    width: 50%;
+}
+
+.recetas-1 h3{
+    font-size: 18px;
+    color: #dfdde0;
+}
+
+.recetas-1 p{
+    color: #2fe725;
+}
+
+.recetas-1 hr{
+    margin: 10px 0;
+    border: 1px solid #312f32;
+}
+
+.recetas-2 {
+    width: 100%;
+    text-align: center;
+}
+.recetas-2 h2 {
+    font-size: 55px;
+    line-height: 55px;
+    color: #dfdde0;
+}
+
+.platillos{
+    padding: 50px 0;
+
+}
+
+/*_________________
+.swiper-slide img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
+/*_________________*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-next{
+    color: #2bd322;
+}
+
+.swiper-button-prev{
+    color: #29cb29;
+}
+.platillo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.platillo h3{
+    font-size: 16px;
+    color: #dfdde0;
+    margin-bottom: 10px;
+}
+.precio{
+    font-size: 10px;
+    color: #2eeb27 !important;
+
+}
+
+.platillo img{
+    width: 200px;
+}
+.platillo p{
+    font-size: 16px;
+    color: #dfdde0;
+    margin-top: 15px;
+}
+
+.c1,.c2{
+    color: #8d7e7b !important;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------------FOOTER-------------------------- */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.iconos {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    gap: 10px;
+}
+
+.iconos a {
+    font-size: 25px;
+}
+
+.facebook {
+    color: rgb(35, 8, 237);
+}
+
+.whatsapp {
+    color: rgb(12, 155, 10);
+}
+
+.twitter {
+    color: white
+}
+
+.instagram {
+    color: rgb(219, 11, 205);
+}
+
+.iconos a:hover {
+    transform: scale(1.2);
+}
+
+/* estilos para el footer */
+footer {
+    background-color: #313030;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------------------------------------------------------------------- */

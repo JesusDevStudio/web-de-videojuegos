@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--en la sección se están configurando metadatos, importando archivos CSS y JavaScript, así como definir el título de la página y el icono del navegador-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gamer Nation</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./scripts/inicio.js" defer></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./assets/images/iconoWeb.ico">
+</head>
+
+<body>
+    <!--esta seccion crea un encabezado con un menú de navegación que contiene enlaces a diferentes partes del sitio web, como la página de inicio, la página de solicitud de presupuesto, la galería de videojuegos y consolas, y la página de contacto con la clase active para que resalte en la pagina que se encuentra el usuario-->
+    <div class="body-container">
+
+        <header class="header">
+            <div class="menu container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a class="active" href="/index.html">Inicio</a></li>
+                        <li><a href="views/presupestos.html">Solicita presupuesto</a></li>
+                        <li><a href="views/galeria.html">Videojuegos&nbsp;y consolas</a></li>
+                        <li><a href="views/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="content">
+            <!--En esta parte se ha implementado un slider con tres imagenes las cuales, la primera corresponde al logo de la pagina y las otras dis son eventos en los que pinchas y te dirigen a las paginas para saber como asistir a esos eventos-->
+            <div class="container-carrusel">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./assets/images/gamer-nation.webp" alt="Nature Image #1" width="1334"
+                                height="750">
+                        </li>
+                        <li class="slide">
+                            <img src="./assets/images/cartel-gamergy.jpg" alt="Nature Image #2" width="650"
+                                height="366">
+                        </li>
+                        <li class="slide">
+                            <img src="./assets/images/Sorteo-Instant-Gaming.webp" alt="Nature Image #3" width="576"
+                                height="350">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Esta seccion se trata de unos tips y guias sobre diferentes temas relacionados con videojuegos-->
+            <section class="seccion-guias">
+                <div class="mitad-blanco">
+                    <h2>Guías y trucos</h2>
+                </div>
+                <div class="mitad-imagen">
+                    <div class="cuadro">
+                        <a href="https://www.opirata.com/blog/siete-trucos-para-ser-un-buen-gamer/" target="_blank">
+                            <img class="imagen-guia" src="./assets/images/trucosGamer.png" alt="Guía 1" width="718"
+                                height="381">
+                        </a>
+                        <!--Esta seccion se trata de una serie de trucos para convertirse en un gran gamer-->
+                        <p>Trucos para ser un buen Gamer</p>
+                    </div>
+                    <div class="cuadro">
+                        <a href="https://store.epicgames.com/es-ES/news/gta-online-beginners-guide-12-tips-to-get-you-started"
+                            target="_blank">
+                            <img class="imagen-guia" src="./assets/images/Gta5.png" alt="Guía 2" width="609"
+                                height="448">
+                        </a>
+                        <p>Tips para GTA V</p>
+                    </div>
+                    <div class="cuadro">
+                        <a href="https://www.youtube.com/watch?v=bzMSzO8OWGs" target="_blank">
+                            <img class="imagen-guia" src="./assets/images/play5.png" alt="play5" width="1211"
+                                height="882">
+                        </a>
+                        <p>Tips para la Play 5 </p>
+                    </div>
+                </div>
+            </section>
+            <!--Esta seccion se trata de una serie de videojuegos que han destacado esta semana-->
+            <section class="seccion-slider-destacado">
+                <div class="row">
+                    <div class="col">
+                        <h2>VIDEOJUEGOS DESTACADOS</h2>
+                    </div>
+
+                    <div class="col container-carrusel-destacados">
+                        <div class="carruseles-destacados" id="slide2r">
+                            <div class="slider-section2">
+                                <img src="./assets/images/spiderman.png" alt="spiderman" width="580" height="737">
+                            </div>
+                            <div class="slider-section2">
+                                <img src="./assets/images/AWII.png" alt="AWII" class="bx-slider" width="1229"
+                                    height="1500">
+                            </div>
+                            <div class="slider-section2">
+                                <img src="./assets/images/BaldursGate.png" alt="BaldursGate" id="slid" width="199"
+                                    height="253">
+                            </div>
+                        </div>
+                        <div class="btn-left-destacados"><i class='bx bx-chevron-left'></i></div>
+                        <div class="btn-right-destacados"><i class='bx bx-chevron-right'></i></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="section-noticias">
+                <h2><em>Noticias</em></h2>
+                <div class="news_container_display">
+                    <!-- Aquí se insertan noticias -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!--Esta seccion incluye los iconos de las redes sociales en los cuales si pinchas te dirige a sus paginas-->
+            <p>Derechos de autor © 2023 - C/ Los Almendros, 15</p>
+            <div class="iconos">
+                <a href="https://www.facebook.com/jesus.gonzalezhiguera/?locale=es_LA" class="facebook"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://web.whatsapp.com/" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://twitter.com/?lang=es" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

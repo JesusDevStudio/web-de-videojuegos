@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--en la sección se están configurando metadatos, importando archivos CSS y JavaScript, así como definir el título de la página y el icono del navegador-->
+    <meta charset="utf-8">
+    <title>Galería de videojuegos</title>
+    <link rel="stylesheet" href="../css/estilos_contacto.css">
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="../assets/images/iconoWeb.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script defer src="../scripts/contacto.js"></script>
+
+    <!--He incluido las librerías de Leaflet Routing Machine junto con Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
+    <script src="https://unpkg.com/leaflet-routing-machine"></script>
+
+    <!--Luego Inclui los archivos CSS y JavaScript de Leaflet Control "Geocoder"-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
+
+</head>
+
+<body>
+    <!--esta seccion crea un encabezado con un menú de navegación que contiene enlaces a diferentes partes del sitio web, como la página de inicio, la página de solicitud de presupuesto, la galería de videojuegos y consolas, y la página de contacto con la clase active para que resalte en la pagina que se encuentra el usuario-->
+    <div class="body-container">
+        <header class="header">
+            <div class="menu container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="presupestos.html">Solicita presupuesto </a></li>
+                        <li><a href="galeria.html">Videojuegos y consolas</a></li>
+                        <li><a class="active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--Aqui se encuentran los datos de contacto de la empresa-->
+        <main class="content">
+            <div class="container">
+                <h1>Contacto</h1>
+            </div>
+            <div class="datos-contacto">
+                <h2>Datos de contacto</h2>
+                <p><span class="nombre-strong">
+                        Nombre: <strong>Tienda de videojuegos y consolas</strong></span>
+                </p>
+                <p><span class="direccion-strong">
+                        Dirección: <strong>Calle Mayor, 123</strong></span>
+                </p>
+                <p><span class="ciudad-strong">
+                        Ciudad: <strong>Madrid</strong></span>
+                </p>
+                <p><span class="codigo-postal-strong">
+                        Código postal: <strong>28001</strong></span>
+                </p>
+                <p><span class="telefono-strong">
+                        Teléfono: <strong>912345678</strong></span>
+                </p>
+                <p><span class="email-strong">
+                        Correo electrónico: <strong>info@tiendadevideojuegos.com</strong></span> </p>
+            </div>
+            <div class="map">
+                <h2>Ubicación</h2>
+                <div id="map"></div>
+                <!--este script utiliza Leaflet.js para crear un mapa interactivo, agregar marcadores y popups, y permitir que el usuario vea las coordenadas al hacer clic en diferentes puntos del mapa.-->
+                <script>
+
+                </script>
+
+
+            </div>
+        </main>
+        <!--Aqui se encuentra el pie de pagina con los iconos de redes sociales que pinchando en ellos te dirige a sus respectivas redes-->
+        <footer>
+            <p>Derechos de autor © 2023 - C/ Los Almendros, 15</p>
+            <div class="iconos">
+                <a href="https://www.facebook.com/jesus.gonzalezhiguera/?locale=es_LA" class="facebook"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://web.whatsapp.com/" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://twitter.com/?lang=es" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

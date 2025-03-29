@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--en la sección se están configurando metadatos, importando archivos CSS y JavaScript, así como definir el título de la página y el icono del navegador-->
+    <meta charset="UTF-8">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/estilos_presupuestos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/iconoWeb.ico">
+    <script src="../scripts/presupuestos.js" defer></script>
+</head>
+
+<body>
+    <!--esta seccion crea un encabezado con un menú de navegación que contiene enlaces a diferentes partes del sitio web, como la página de inicio, la página de solicitud de presupuesto, la galería de videojuegos y consolas, y la página de contacto con la clase active para que resalte en la pagina que se encuentra el usuario-->
+    <div class="body-container">
+        <header class="header">
+            <div class="menu container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./presupestos.html" class="active">Solicita presupuesto</a></li>
+                        <li><a href="./galeria.html">Videojuegos y consolas</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="content">
+            <h1>Solicitud de Presupuesto</h1>
+            <!-- Datos de contacto -->
+            <form id="contactForm" class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos">
+
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo">
+
+                <!-- Presupuesto -->
+                <h2>Presupuesto</h2>
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto">
+                    <!--<option value="opcion0">0</option>-->
+                    <option value="opcion1">Opción 1 - $100</option>
+                    <option value="opcion2">Opción 2 - $150</option>
+                    <option value="opcion3">Opción 3 - $200</option>
+                </select>
+
+                <label for="plazo">Plazo (meses):</label>
+                <input type="number" id="plazo" name="plazo" value="1">
+
+
+
+                <p>Extras:</p>
+                <input type="checkbox" id="extra1" name="extras" value="$50"> Extra 1 (+$50)
+                <input type="checkbox" id="extra2" name="extras" value="$75"> Extra 2 (+$75)
+                <input type="checkbox" id="extra3" name="extras" value="$100"> Extra 3 (+$100)
+
+                <p>Presupuesto Final:</p>
+                <span class="price-status"></span>
+
+                <h2>Aceptacion de condiciones y envio de presupuesto</h2>
+                <label for="aceptarCondiciones">Aceptar Condiciones:</label>
+                <input type="checkbox" id="aceptarCondiciones" name="aceptarCondiciones">
+
+                <button type="submit">Enviar Presupuesto</button>
+                <button type="reset">Resetear Formulario</button>
+            </form>
+        </main>
+        <!--Esta seccion incluye los iconos de redes sociales los cuales si pinchas te dirigen a sus respectivas paginas-->
+        <footer>
+            <p>Derechos de autor © 2023 - C/ Los Almendros, 15</p>
+            <div class="iconos">
+                <a href="https://www.facebook.com/jesus.gonzalezhiguera/?locale=es_LA" class="facebook"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://web.whatsapp.com/" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://twitter.com/?lang=es" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
